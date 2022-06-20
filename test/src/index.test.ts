@@ -1,7 +1,13 @@
-import a from '@elonehoo/point-line'
+import {decode ,encode} from '@elonehoo/point-line'
 
-import {test} from 'vitest'
+import {test,expect} from 'vitest'
 
 test('demo',()=>{
-  console.log(a)
+  expect(encode('I love you, 我爱你。')).toBe('../.-../---/...-/./-.--/---/..-/--..--/--...-....-...-/---..-...--...-/-..----.--...../--..........-.')
+  expect(decode('../.-../---/...-/./-.--/---/..-/--..--/--...-....-...-/---..-...--...-/-..----.--...../--..........-.')).toBe('ILOVEYOU,我爱你。')
+})
+
+test('demo2',()=>{
+  expect(encode('Hello',{space:' '})).toBe('.... . .-.. .-.. ---')
+  expect(decode('.... . .-.. .-.. ---',{space:' '})).toBe('HELLO')
 })
