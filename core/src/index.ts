@@ -1,2 +1,4 @@
-const a = 1
-export default a
+import { decode } from "./decode"
+import { encode } from "./encode"
+
+export {decode,encode}
