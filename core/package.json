@@ -1,6 +1,6 @@
 {
   "name": "@elonehoo/point-line",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "description": "Morse code is a method used in telecommunication to encode text characters as standardized sequences of two different signal durations, called dots and dashes, or dits and dahs.",
   "author": "Elone Hoo <huchengyea@163.com>",
@@ -13,7 +13,7 @@
     "test": "vitest"
   },
   "devDependencies": {
-      "rimraf": "^3.0.2",
-      "unbuild": "^0.7.4"
+    "rimraf": "^3.0.2",
+    "unbuild": "^0.7.4"
   }
 }
