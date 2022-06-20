@@ -5,10 +5,10 @@
   "author": "Elone Hoo <huchengyea@163.com>",
   "type": "module",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "prepare": "pnpm -r run stub",
-    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public",
+    "release": "bumpp package.json core/package.json --commit --push --tag && pnpm -r publish --access public",
     "typeCheck": "tsc --noEmit",
     "test": "pnpm -C test run test",
     "coverage": "pnpm -C test run coverage",
