@@ -1,0 +1,29 @@
+{
+  "name": "@elonehoo/monorepo",
+  "private": "true",
+  "description": "Morse code is a method used in telecommunication to encode text characters as standardized sequences of two different signal durations, called dots and dashes, or dits and dahs.",
+  "author": "Elone Hoo <huchengyea@163.com>",
+  "type": "module",
+  "license": "MIT",
+  "version": "0.0.0",
+  "scripts": {
+    "prepare": "pnpm -r run stub",
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public",
+    "typeCheck": "tsc --noEmit",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@elonehoo/eslint-config": "^2.0.0",
+    "@types/node": "^18.0.0",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.18.0",
+    "pnpm": "^7.3.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4",
+    "unbuild": "^0.7.4",
+    "vite": "^2.9.12"
+  }
+}
