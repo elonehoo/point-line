@@ -14,7 +14,8 @@
     "coverage": "pnpm -C test run coverage",
     "reporter": "pnpm -C test run reporter",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "example-dev":"pnpm -C example run dev"
   },
   "devDependencies": {
     "@elonehoo/eslint-config": "^2.0.0",
