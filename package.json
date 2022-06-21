@@ -15,7 +15,8 @@
     "reporter": "pnpm -C test run reporter",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "example-dev":"pnpm -C example run dev"
+    "example-dev":"pnpm -C example run dev",
+    "example-build":"pnpm -C example run build"
   },
   "devDependencies": {
     "@elonehoo/eslint-config": "^2.0.0",
