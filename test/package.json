@@ -1,11 +1,11 @@
 {
   "name": "@elonehoo/test",
+  "type": "module",
   "version": "0.0.0",
   "private": "true",
-  "type": "module",
   "description": "Morse code is a method used in telecommunication to encode text characters as standardized sequences of two different signal durations, called dots and dashes, or dits and dahs.",
-  "author": "Elone Hoo <huchengyea@163.com>",
   "license": "MIT",
+  "author": "Elone Hoo <huchengyea@163.com>",
   "scripts": {
     "test": "vitest",
     "coverage": "vitest run --coverage",

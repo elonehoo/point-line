@@ -1,5 +1,5 @@
 export type Option = Partial<{
-  readonly space: string;
-  readonly short: string;
-  readonly long: string;
-}>;
+  readonly space: string
+  readonly short: string
+  readonly long: string
+}>
