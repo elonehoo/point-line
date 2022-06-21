@@ -10,7 +10,7 @@ function toggleDark() {
     <button class="icon-btn" @click="toggleDark()">
       <div class="i-carbon-sun dark:i-carbon-moon" />
     </button>
-    <a href="https://github.com/elonehoo/vitem-mini" target="_blank" class="icon-btn i-carbon-logo-github">
+    <a href="https://github.com/elonehoo/point-line" target="_blank" class="icon-btn i-carbon-logo-github">
     </a>
   </nav>
 </template>
