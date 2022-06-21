@@ -1,6 +1,6 @@
-import { reverseStandard } from '../util';
+import { reverseStandard } from '../util'
 
-export const STANDARD = {
+export const STANDARD: Record<string, string> = {
   A: '01',
   B: '1000',
   C: '1010',

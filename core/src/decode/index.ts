@@ -5,7 +5,7 @@ import { Option } from '../types'
 function morseHexUnicode(mor:any) {
   mor = parseInt(mor, 2)
   if (isNaN(mor)) return ''
-  return eval("'" + '\\u' +  mor.toString(16) + "'");
+  return String.fromCharCode(mor);
 }
 
 export function decode(morse: string, option?: Option): string {
