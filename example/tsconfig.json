@@ -14,8 +14,7 @@
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "types": [
-      "vite/client",
-      "unplugin-icons/types/vue"
+      "vite/client"
     ],
     "paths": {
       "~/*": ["src/*"]
