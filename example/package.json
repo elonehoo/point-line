@@ -17,7 +17,7 @@
     "@unocss/reset": "0.32.13",
     "@vitejs/plugin-vue": "2.3.4",
     "@vue/compiler-sfc": "3.2.39",
-    "unocss": "0.32.13",
+    "unocss": "0.45.18",
     "vue-tsc": "0.40.13"
   }
 }
