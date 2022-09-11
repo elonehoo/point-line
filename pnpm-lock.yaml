@@ -36,7 +36,7 @@ importers:
     specifiers:
       '@elonehoo/point-line': workspace:*
       '@iconify-json/carbon': 1.1.7
-      '@unocss/reset': 0.32.13
+      '@unocss/reset': 0.45.18
       '@vitejs/plugin-vue': 2.3.4
       '@vue/compiler-sfc': 3.2.39
       unocss: 0.45.18
@@ -49,7 +49,7 @@ importers:
     devDependencies:
       '@elonehoo/point-line': link:../core
       '@iconify-json/carbon': 1.1.7
-      '@unocss/reset': 0.32.13
+      '@unocss/reset': 0.45.18
       '@vitejs/plugin-vue': 2.3.4_vite@3.1.0+vue@3.2.39
       '@vue/compiler-sfc': 3.2.39
       unocss: 0.45.18_vite@3.1.0
@@ -900,10 +900,6 @@ packages:
     dependencies:
       '@unocss/core': 0.45.18
       '@unocss/preset-mini': 0.45.18
-    dev: true
-
-  /@unocss/reset/0.32.13:
-    resolution: {integrity: sha512-jnufRcqKvJapTQ5HIMWrV35ipxdV3KW1Gv1yIIk63nI071c4p9zKbsWktY7UcCYU47hbE2lJuHc0ShbDrwQ6rQ==}
     dev: true
 
   /@unocss/reset/0.45.18:
