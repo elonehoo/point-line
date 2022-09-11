@@ -37,7 +37,7 @@ importers:
       '@elonehoo/point-line': workspace:*
       '@iconify-json/carbon': 1.1.7
       '@unocss/reset': 0.45.18
-      '@vitejs/plugin-vue': 2.3.4
+      '@vitejs/plugin-vue': 3.1.0
       '@vue/compiler-sfc': 3.2.39
       unocss: 0.45.18
       vue: 3.2.39
@@ -50,7 +50,7 @@ importers:
       '@elonehoo/point-line': link:../core
       '@iconify-json/carbon': 1.1.7
       '@unocss/reset': 0.45.18
-      '@vitejs/plugin-vue': 2.3.4_vite@3.1.0+vue@3.2.39
+      '@vitejs/plugin-vue': 3.1.0_vite@3.1.0+vue@3.2.39
       '@vue/compiler-sfc': 3.2.39
       unocss: 0.45.18_vite@3.1.0
       vue-tsc: 0.40.13_typescript@4.8.3
@@ -951,11 +951,11 @@ packages:
       vite: 3.1.0
     dev: true
 
-  /@vitejs/plugin-vue/2.3.4_vite@3.1.0+vue@3.2.39:
-    resolution: {integrity: sha512-IfFNbtkbIm36O9KB8QodlwwYvTEsJb4Lll4c2IwB3VHc2gie2mSPtSzL0eYay7X2jd/2WX02FjSGTWR6OPr/zg==}
-    engines: {node: '>=12.0.0'}
+  /@vitejs/plugin-vue/3.1.0_vite@3.1.0+vue@3.2.39:
+    resolution: {integrity: sha512-fmxtHPjSOEIRg6vHYDaem+97iwCUg/uSIaTzp98lhELt2ISOQuDo2hbkBdXod0g15IhfPMQmAxh4heUks2zvDA==}
+    engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
-      vite: ^2.5.10
+      vite: ^3.0.0
       vue: ^3.2.25
     dependencies:
       vite: 3.1.0
