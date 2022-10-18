@@ -36,7 +36,7 @@ importers:
     specifiers:
       '@elonehoo/point-line': workspace:*
       '@iconify-json/carbon': 1.1.7
-      '@unocss/reset': 0.45.18
+      '@unocss/reset': 0.45.30
       '@vitejs/plugin-vue': 3.1.0
       '@vue/compiler-sfc': 3.2.39
       unocss: 0.45.22
@@ -49,7 +49,7 @@ importers:
     devDependencies:
       '@elonehoo/point-line': link:../core
       '@iconify-json/carbon': 1.1.7
-      '@unocss/reset': 0.45.18
+      '@unocss/reset': 0.45.30
       '@vitejs/plugin-vue': 3.1.0_vite@3.1.0+vue@3.2.39
       '@vue/compiler-sfc': 3.2.39
       unocss: 0.45.22_vite@3.1.0
@@ -952,12 +952,12 @@ packages:
       '@unocss/preset-mini': 0.45.22
     dev: true
 
-  /@unocss/reset/0.45.18:
-    resolution: {integrity: sha512-85T9tdRo86Legeus3HHCMvwUDJRWoUz2hcHrwVeI5J1mCgC0uw/0+BybOyzHBEW4uvFLp9n3tI6Z8x0k+7ZFMQ==}
-    dev: true
-
   /@unocss/reset/0.45.22:
     resolution: {integrity: sha512-jNLWr5tZ2X+fMCNXYXJe5/AUeTPeWcXke0XpWSXrQ7f5Bbk1TpbUFcV7ln4DvUwRkQsmcDYxdj7em/wN1U0mSQ==}
+    dev: true
+
+  /@unocss/reset/0.45.30:
+    resolution: {integrity: sha512-m6+M3E2cTPhX+2aKocRfDqQt7ebEtjJHH8sVYpX8xJoN0vOqjSNmUYc6AIkwUYljx4QbEC3thcQSbqel82RbXQ==}
     dev: true
 
   /@unocss/scope/0.45.22:
