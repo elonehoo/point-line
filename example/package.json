@@ -8,16 +8,16 @@
     "preview": "vite preview --port 8766 --open"
   },
   "dependencies": {
-    "vue": "3.2.39",
-    "vue-router": "4.1.5"
+    "vue": "3.2.45",
+    "vue-router": "4.1.6"
   },
   "devDependencies": {
-    "@iconify-json/carbon": "1.1.7",
+    "@iconify-json/carbon": "1.1.11",
     "@elonehoo/point-line": "workspace:*",
-    "@unocss/reset": "0.45.18",
-    "@vitejs/plugin-vue": "3.1.0",
-    "@vue/compiler-sfc": "3.2.39",
-    "unocss": "0.45.22",
+    "@unocss/reset": "0.47.6",
+    "@vitejs/plugin-vue": "3.2.0",
+    "@vue/compiler-sfc": "3.2.45",
+    "unocss": "0.47.6",
     "vue-tsc": "0.40.13"
   }
 }
