@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/assets/logo.1574b907.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>point line</title>
+    <script type="module" crossorigin src="/assets/index.5e0abbca.js"></script>
+    <link rel="stylesheet" href="/assets/index.e9d1cb81.css">
+  </head>
+  <body class="font-sans dark:text-white dark:bg-[#121212]">
+    <div id="app"></div>
+    <script>
+      (function() {
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        const setting = localStorage.getItem('color-schema') || 'auto'
+        if (setting === 'dark' || (prefersDark && setting !== 'light'))
+          document.documentElement.classList.toggle('dark', true)
+      })()
+    </script>
+    
+  </body>
+</html>
