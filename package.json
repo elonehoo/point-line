@@ -24,7 +24,7 @@
     "bumpp": "8.2.1",
     "eslint": "8.30.0",
     "pnpm": "7.18.2",
-    "rimraf": "3.0.2",
+    "rimraf": "4.4.1",
     "typescript": "4.9.4",
     "unbuild": "0.9.4",
     "vite": "3.2.5"
