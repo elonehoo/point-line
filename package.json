@@ -1,32 +1,55 @@
 {
-  "name": "@elonehoo/monorepo",
-  "type": "module",
+  "name": "@elonehoo/point-line",
   "version": "0.0.3",
-  "private": "true",
   "description": "Morse code is a method used in telecommunication to encode text characters as standardized sequences of two different signal durations, called dots and dashes, or dits and dahs.",
   "license": "MIT",
   "author": "Elone Hoo <huchengyea@163.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elonehoo/point-line.git"
+  },
+  "funding": "https://github.com/sponsors/elonehoo",
+  "homepage": "https://github.com/elonehoo/point-line#readme",
+  "bugs": {
+    "url": "https://github.com/elonehoo/point-line/issues"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    },
+    "./*": "./*"
+  },
+  "files": [
+    "dist",
+    "*.d.ts"
+  ],
   "scripts": {
-    "prepare": "pnpm -r run stub",
-    "release": "bumpp package.json core/package.json --commit --push --tag && pnpm -r publish --access public",
-    "typeCheck": "tsc --noEmit",
-    "test": "pnpm -C test run test",
-    "coverage": "pnpm -C test run coverage",
-    "reporter": "pnpm -C test run reporter",
+    "build": "rimraf dist && unbuild",
+    "stub": "unbuild --stub",
+    "prepublishOnly": "pnpm run build",
+    "release": "bumpp package.json --commit --push --tag && pnpm -r publish --access public",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "example-dev":"pnpm -C example run dev",
-    "example-build":"pnpm -C example run build"
+    "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
     "@elonehoo/eslint-config": "2.0.0",
-    "@types/node": "18.11.17",
-    "bumpp": "8.2.1",
-    "eslint": "8.30.0",
-    "pnpm": "7.18.2",
-    "rimraf": "3.0.2",
-    "typescript": "4.9.4",
-    "unbuild": "0.9.4",
-    "vite": "3.2.5"
+    "@types/node": "18.15.11",
+    "@vitest/coverage-c8": "^0.30.1",
+    "bumpp": "9.1.0",
+    "eslint": "8.38.0",
+    "pnpm": "8.2.0",
+    "rimraf": "5.0.0",
+    "typescript": "5.0.4",
+    "unbuild": "1.2.1",
+    "vite": "4.2.1",
+    "vitest": "^0.30.1"
   }
 }

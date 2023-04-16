@@ -1,4 +1,4 @@
-import { decode, encode } from '@elonehoo/point-line'
+import { decode, encode } from '../src'
 
 import { expect, test } from 'vitest'
 
