@@ -1,6 +1,5 @@
-import { decode, encode } from '../src'
-
 import { expect, test } from 'vitest'
+import { decode, encode } from '../src'
 
 test('demo', () => {
   expect(encode('I love you, 我爱你。')).toBe('../.-../---/...-/./-.--/---/..-/--..--/--...-....-...-/---..-...--...-/-..----.--...../--..........-.')
@@ -14,13 +13,13 @@ test('demo2', () => {
 
 test('demo3', () => {
   // standart morse
-  console.log(encode('Hello, World!'))
+  expect(encode('Hello, World!')).toBe('...././.-../.-../---/--..--/.--/---/.-./.-../-../-.-.--')
 
   // unicode
-  console.log(encode('こんにちは世界！'))
-  console.log(encode('你好，世界！'))
+  expect(encode('こんにちは世界！')).toBe('--.....-.-..--/--....-..-..--/--.....--.-.--/--.....--....-/--.....--.----/-..---....-.--./---.-.-.-..--../--------.......-')
+  expect(encode('你好，世界！')).toBe('-..----.--...../-.--..-.-----.-/--------....--../-..---....-.--./---.-.-.-..--../--------.......-')
 })
 
 test('demo4', () => {
-  console.log(decode('...././.-../.-../---/--..--/.--/---/.-./.-../-../-.-.--'))
+  expect(decode('...././.-../.-../---/--..--/.--/---/.-./.-../-../-.-.--')).toBe('HELLO,WORLD!')
 })
