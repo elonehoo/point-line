@@ -3,8 +3,8 @@ import { DEFAULT_OPTION, REVERSED_STANDARD } from '../const'
 import type { Option } from '../types'
 
 function morseHexUnicode(mor: any) {
-  mor = parseInt(mor, 2)
-  if (isNaN(mor))
+  mor = Number.parseInt(mor, 2)
+  if (Number.isNaN(mor))
     return ''
   return String.fromCharCode(mor)
 }

@@ -7,7 +7,7 @@ function unicodeHexMorse(ch: string): string {
     r[i] = (`00${ch.charCodeAt(i).toString(16)}`).slice(-4)
 
   let s = r.join('')
-  s = parseInt(s, 16).toString(2)
+  s = Number.parseInt(s, 16).toString(2)
   return s
 }
 
