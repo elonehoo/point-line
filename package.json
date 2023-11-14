@@ -25,8 +25,8 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
-    "dist",
-    "*.d.ts"
+    "*.d.ts",
+    "dist"
   ],
   "scripts": {
     "build": "rimraf dist && unbuild",
@@ -40,7 +40,7 @@
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.43.1",
+    "@antfu/eslint-config": "1.1.1",
     "@types/node": "20.9.0",
     "@vitest/coverage-v8": "^0.34.6",
     "bumpp": "9.2.0",

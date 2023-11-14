@@ -1,17 +1,17 @@
-import { expect, test } from 'vitest'
+import { expect, it } from 'vitest'
 import { decode, encode } from '../src'
 
-test('demo', () => {
+it('demo', () => {
   expect(encode('I love you, 我爱你。')).toBe('../.-../---/...-/./-.--/---/..-/--..--/--...-....-...-/---..-...--...-/-..----.--...../--..........-.')
   expect(decode('../.-../---/...-/./-.--/---/..-/--..--/--...-....-...-/---..-...--...-/-..----.--...../--..........-.')).toBe('ILOVEYOU,我爱你。')
 })
 
-test('demo2', () => {
+it('demo2', () => {
   expect(encode('Hello', { space: ' ' })).toBe('.... . .-.. .-.. ---')
   expect(decode('.... . .-.. .-.. ---', { space: ' ' })).toBe('HELLO')
 })
 
-test('demo3', () => {
+it('demo3', () => {
   // standart morse
   expect(encode('Hello, World!')).toBe('...././.-../.-../---/--..--/.--/---/.-./.-../-../-.-.--')
 
@@ -20,6 +20,6 @@ test('demo3', () => {
   expect(encode('你好，世界！')).toBe('-..----.--...../-.--..-.-----.-/--------....--../-..---....-.--./---.-.-.-..--../--------.......-')
 })
 
-test('demo4', () => {
+it('demo4', () => {
   expect(decode('...././.-../.-../---/--..--/.--/---/.-./.-../-../-.-.--')).toBe('HELLO,WORLD!')
 })
