@@ -1,6 +1,6 @@
-import { DEFAULT_OPTION, REVERSED_STANDARD } from '../const'
-
 import type { Option } from '../types'
+
+import { DEFAULT_OPTION, REVERSED_STANDARD } from '../const'
 
 function morseHexUnicode(mor: any) {
   mor = Number.parseInt(mor, 2)

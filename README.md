@@ -18,7 +18,7 @@ pnpm i @elonehoo/point-line
 ## Usage
 
 ```typescript
-import {decode ,encode} from '@elonehoo/point-line'
+import { decode, encode } from '@elonehoo/point-line'
 // standart morse
 encode('Hello, World!')
 
@@ -36,7 +36,7 @@ encode('你好，世界！', option)
 ```
 
 ```typescript
-import {decode ,encode} from '@elonehoo/point-line'
+import { decode, encode } from '@elonehoo/point-line'
 
 decode('...././.-../.-../---/--..--/.--/---/.-./.-../-../-.-.--')
 ```
