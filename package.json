@@ -41,7 +41,7 @@
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "6.2.0",
+    "@antfu/eslint-config": "6.5.1",
     "@types/node": "24.10.1",
     "@vitest/coverage-v8": "^4.0.15",
     "bumpp": "10.3.2",
@@ -50,7 +50,7 @@
     "rimraf": "6.1.2",
     "typescript": "5.9.3",
     "unbuild": "3.6.1",
-    "vite": "7.2.6",
+    "vite": "7.2.7",
     "vitest": "^4.0.15"
   }
 }
