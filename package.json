@@ -44,7 +44,7 @@
     "@antfu/eslint-config": "7.4.3",
     "@types/node": "24.10.13",
     "@vitest/coverage-v8": "^4.0.18",
-    "bumpp": "10.4.1",
+    "bumpp": "11.0.0",
     "eslint": "10.0.1",
     "pnpm": "10.30.1",
     "rimraf": "6.1.3",
