@@ -2,6 +2,7 @@
   "name": "@elonehoo/point-line",
   "type": "module",
   "version": "0.0.6",
+  "packageManager": "pnpm@12.14.0",
   "description": "Morse code is a method used in telecommunication to encode text characters as standardized sequences of two different signal durations, called dots and dashes, or dits and dahs.",
   "author": "Elone Hoo <hi@elonehoo.me>",
   "license": "MIT",
@@ -41,16 +42,17 @@
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "7.4.3",
-    "@types/node": "24.10.13",
-    "@vitest/coverage-v8": "^4.0.18",
-    "bumpp": "11.0.0",
-    "eslint": "10.0.1",
-    "pnpm": "10.30.1",
+    "@antfu/eslint-config": "9.5.1",
+    "@types/node": "24.19.2",
+    "@typescript/native": "npm:typescript@7.0.2",
+    "@vitest/coverage-v8": "^5.0.5",
+    "bumpp": "12.3.0",
+    "eslint": "10.13.0",
+    "pnpm": "12.14.0",
     "rimraf": "6.1.3",
-    "typescript": "5.9.3",
+    "typescript": "npm:@typescript/typescript6@6.0.2",
     "unbuild": "3.6.1",
-    "vite": "8.0.0",
-    "vitest": "^4.0.18"
+    "vite": "8.3.4",
+    "vitest": "^5.0.5"
   }
 }
