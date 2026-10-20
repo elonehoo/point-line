@@ -1,6 +1,10 @@
 import type { Option } from '../types'
 import { DEFAULT_OPTION, STANDARD } from '../const'
 
+const WHITESPACE = /\s+/g
+const SHORT_BITS = /0/g
+const LONG_BITS = /1/g
+
 function unicodeHexMorse(ch: string): string {
   const r = []
   for (let i = 0; i < ch.length; i++)
@@ -18,7 +22,7 @@ export function encode(msg: string, option?: Option): string {
   }
 
   const text = msg
-    .replace(/\s+/g, '')
+    .replace(WHITESPACE, '')
     .toLocaleUpperCase()
     .split('')
 
@@ -28,7 +32,7 @@ export function encode(msg: string, option?: Option): string {
       if (!r)
         r = unicodeHexMorse(ch)
 
-      return r.replace(/0/g, short).replace(/1/g, long)
+      return r.replace(SHORT_BITS, short).replace(LONG_BITS, long)
     })
     .join(space)
 }
