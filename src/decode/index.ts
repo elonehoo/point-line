@@ -2,6 +2,8 @@ import type { Option } from '../types'
 
 import { DEFAULT_OPTION, REVERSED_STANDARD } from '../const'
 
+const WHITESPACE = /\s+/g
+
 function morseHexUnicode(mor: any) {
   mor = Number.parseInt(mor, 2)
   if (Number.isNaN(mor))
@@ -19,7 +21,7 @@ export function decode(morse: string, option?: Option): string {
     .split(space)
     .map((mor: string) => {
       const m = mor
-        .replace(/\s+/g, '')
+        .replace(WHITESPACE, '')
         .replace(new RegExp(`\\${short}`, 'g'), '0')
         .replace(new RegExp(`\\${long}`, 'g'), '1')
 

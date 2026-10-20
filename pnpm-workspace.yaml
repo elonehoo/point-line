@@ -1,0 +1,9 @@
+# Use optional platform binaries without running these reviewed postinstall scripts.
+# Unreviewed dependency builds and fresh releases remain blocked.
+strictDepBuilds: true
+minimumReleaseAge: 1440
+allowBuilds:
+  esbuild@0.25.9 || 0.27.2: false
+  rolldown@1.0.0-rc.9 || 1.2.14: false
+shellEmulator: true
+trustPolicy: no-downgrade
