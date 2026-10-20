@@ -23,3 +23,12 @@ it('demo3', () => {
 it('demo4', () => {
   expect(decode('...././.-../.-../---/--..--/.--/---/.-./.-../-../-.-.--')).toBe('HELLO,WORLD!')
 })
+
+it('does not retain regular expression state between calls', () => {
+  for (let attempt = 0; attempt < 3; attempt++) {
+    expect(encode('  H e l l o\t', { space: ' ' })).toBe('.... . .-.. .-.. ---')
+    expect(decode('.... . .-.. .-.. ---', { space: ' ' })).toBe('HELLO')
+    expect(encode(' SOS ')).toBe('.../---/...')
+    expect(decode('.../---/...')).toBe('SOS')
+  }
+})
